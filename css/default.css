@@ -1,0 +1,144 @@
+:root {
+  --white: #fff;
+    --black: #000;
+    --font-color-base: #666;
+    --font-color-dark: #212529;
+    --font-color-light: #b0aebe;
+    --font-color-link: #57a6ff;
+    --footer: #34314b;
+    --footer-base: #2e2b45;
+    --contrast: rgba(246, 248, 249, 0.8);
+    --success: #64ecf5;
+    --danger: #ff8b8d;
+    --grad-1: #a1ecff;
+    --grad-2: #7dbcff;
+    --size-10: 0.625rem;
+    --size-14: 0.875rem;
+    --size-16: 1rem;
+    --size-18: 1.125rem;
+    --size-20: 1.25rem;
+    --size-30: 1.875rem;
+    --size-40: 2.5rem;
+    --size-50: 3.125rem;
+    --size-100: 6.25rem;
+    --size-150: 9.375rem;
+}
+
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: var(--size-14);
+  line-height: 1.6;
+  letter-spacing: 0;
+  color: var(--font-color-base);
+}
+
+
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+li {
+  white-space:nowrap;
+}
+
+a { 
+  text-decoration: none; 
+  white-space: nowrap;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: minmax(30px, 1fr) minmax(944px, 1fr) minmax(30px, 1fr);
+  grid-auto-flow: row;
+  align-items: center;
+}
+
+.logo-images {
+  background-image: url(../assets/images/backgrounds/background-top.svg);
+  background: center;
+}
+
+h2 {
+  font-size: var(--size-40);
+  font-family: "Hinds", sans-serif;
+  font-weight: 600;
+  color: var(--font-color-dark);
+  margin-bottom: var(--size-20);
+  line-height: 1.3;
+  margin-top: 0.5rem;
+}
+
+h1, h2, h3, h4, {
+  font-weight: bold;
+  color: #000;
+}
+
+.subtext {
+  color: #677788;
+  line-height: 24px;
+}
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  color: var(--font-color-dark);
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+  background-color: transparent;
+  border: 1px solid transparent;
+  padding: 0.475rem 1.75rem;
+  border-radius: 1.25rem;
+  transition: ease-in-out 0.3s;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: 20px 1fr 20px;
+  grid-auto-flow: column;
+  grid-auto-columns: min-content;
+  white-space: nowrap;
+  width: min-content;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: normal;
+  background-color: #2576FF;
+  height: 44px;
+  text-decoration: none;
+  border-radius: 22px;
+  align-content: center;
+}
+
+.button-content {
+  grid-column: 2 / span 1;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: min-content;
+  gap: 10px;
+}
+
+
+
+
+.card-grid{
+  display: flex;
+  justify-content: center;
+  gap: var(--size-10);
+}
+
+.cards img {
+  height: auto;
+  width: var(--size-50);
+}

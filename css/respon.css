@@ -1,0 +1,332 @@
+@media (min-width: 1200px) {
+  .main-grid {
+    grid-template-columns: minmax(60px, 1fr) minmax(1050px, 1fr) minmax(60px, 1fr);
+  }
+
+  .main-grid-logos {
+    grid-template-columns: minmax(10px, 1fr) minmax(1150px, 1fr) minmax(10px, 1fr);
+  }
+}
+
+
+
+
+
+
+@media (min-width: 720px) and (max-width: 1023px) {
+  .main-grid {
+    grid-template-columns: minmax(40px, 1fr) minmax(620px, 1fr) minmax(40px, 1fr);
+    padding: 0%;
+  }
+
+  .main-grid-logos {
+    grid-template-columns: minmax(10px, 1fr) minmax(690px, 1fr) minmax(10px, 1fr);
+  }
+
+  .header-content .header {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .header-content .header .text-box {
+    text-align: center;
+    align-self: center;
+  }
+
+  .header-content .header .logo-pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .header-content .header .logo-pics .logo-icons {
+    position: static;
+    height: 50px;
+    width: 50px;
+  }
+
+  .big-card {
+    grid-column: 1 / span 2;
+  }
+
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+  }
+
+  .banner-one-container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  .banner-one-container .main-banner-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px 5px;
+
+  }
+
+  .banner-one-container .banner-one-text a {
+    justify-self: center;
+  }
+
+  .person-container {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+    gap: 100px;
+  }
+
+  .person-container .person-pic {
+    justify-self: center;
+  }
+
+  .person-container .text-person {
+    text-align: center;
+  }
+
+  .hire-us-content {
+    grid-auto-flow: row;
+    gap: 60px;
+    padding: 50px 30px 30px;
+  }
+
+  .hire-us-content .hire-us {
+    justify-self: center;
+  }
+
+  .card-grid, .column-stack {
+    grid-auto-flow: unset;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr 4fr;
+    gap: 50px;
+  }
+
+  .column-stack {
+    gap: 30px;
+  }
+
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 50px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 20px rgb(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: 20px;
+    color: #666;
+  }
+}
+
+@media (max-width: 719px) {
+
+ .main-grid, .main-grid-logos {
+   grid-template-columns: 16px 1fr 16px;
+   height: auto;
+   width: 100vw;
+ }
+
+  .header-content .header {
+   display: flex;
+   flex-direction: column;
+   position: static;
+   gap: 30px;
+   justify-self: center;
+  }
+
+  .header-content .header .text-box {
+    align-self: center;
+  }
+
+  .header-content .header .logo-pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .header-content .header .logo-pics .logo-icons {
+    position: static;
+    height: 40px;
+    width: 40px;
+  }
+
+  .B-cards {
+    margin-top: 50px;
+  }
+
+  .B-cards .container {
+    grid-auto-columns: row;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+
+  .banner-one-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .banner-one-container .banner-one-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 30px 0px;
+  }
+
+  .banner-one-container .banner-one-image {
+    display: flex;
+    align-items: end;
+  }
+
+  .banner-one-container .banner-one-image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .person-container {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .person-container .person-pic {
+    justify-items: center;
+    display: flex;
+    height: 300px;
+    width: 300px;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .person-container .person-pic .person-1 {
+    left: -25px;
+    bottom: -25px;
+    max-width: 100px;
+  }
+
+  .person-container .text-person {
+    text-align: center;
+  }
+
+  .logos {
+    margin-top: 150px;
+  }
+
+  .logos-container {
+    grid-auto-flow: row;
+    gap: 30px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hire-us-content {
+    grid-auto-flow: row;
+    padding: 50px 0 30px 0;
+    justify-items: center;
+  }
+
+  .hire-us-content .hire-us {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-self: center;
+  }
+
+  .hire-us-content .hire-images {
+    align-self: center;
+  }
+
+  .form {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .form-container > form {
+    grid-template-columns: 1fr;
+  }
+
+  .hire-form form input.input-field, .hire-form form select.select-field, .hire-form form textarea, .hire-form form .form-policy, .hire-form form .form-btn {
+    grid-column: span 1;
+  }
+
+  .footer-content {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .footer-content .column-stack {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bot-footer-links, .copyright, .banner-one-text, .banner-one-image  {
+    grid-column: 1 / span 1;
+  }
+
+  .bot-footer-links {
+    justify-content: flex-start;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  [aria-controls="navbarDropdown"] {
+    display: block;
+  }
+
+  [aria-expanded="false"] ~ ul {
+    display: none;
+  }
+
+  [aria-expanded="true"] ~ ul {
+    display: block;
+    position: absolute;
+    right: 0%;
+    top: 50px;
+    background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+    width: 100%;
+    text-align: right;
+    box-shadow: 0px 0px 20px rgb(52, 49, 75, 0.1);
+  }
+
+  [aria-expanded="true"] ~ ul li a {
+    margin-right: 20px;
+    color: #666;
+  }
+
+
+}
