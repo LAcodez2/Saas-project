@@ -607,7 +607,7 @@ img.hubspot-logo {
   width: auto;
 }
 
-.form {
+.form-container {
   background-color: var(--white);
   padding: var(--size-30);
   border-radius: 5%;

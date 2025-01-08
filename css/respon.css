@@ -144,8 +144,6 @@
 
  .main-grid, .main-grid-logos {
    grid-template-columns: 16px 1fr 16px;
-   height: auto;
-   width: 100vw;
  }
 
   .header-content .header {
@@ -248,6 +246,7 @@
     grid-auto-flow: row;
     padding: 50px 0 30px 0;
     justify-items: center;
+    gap: 80px;
   }
 
   .hire-us-content .hire-us {
@@ -266,8 +265,12 @@
     padding: 5px;
   }
 
-  .form-container > form {
+  .form-container form {
     grid-template-columns: 1fr;
+  }
+
+  .form-container {
+    padding: 5px;
   }
 
   .hire-form form input.input-field, .hire-form form select.select-field, .hire-form form textarea, .hire-form form .form-policy, .hire-form form .form-btn {
